@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIFTY 50 Quantitative Pipeline | Sriram M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&family=Source+Code+Pro:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-container {
+            padding: 120px 10% 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+
+        .detail-grid {
+            display: block;
+            margin-top: 40px;
+        }
+
+        .content-section p {
+            color: var(--text-dim);
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .content-section h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.75rem;
+            /* H2: 1.75rem */
+        }
+
+        .content-section ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .content-section ul li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--text-dim);
+            font-size: 1rem;
+        }
+
+        .content-section ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .image-section img {
+            width: 80%;
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.03);
+        }
+
+        @media (max-width: 968px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-mesh"></div>
+
+    <div class="project-detail-container">
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        <h1 class="section-title">NIFTY 50 Quantitative Analysis Pipeline</h1>
+
+        <div class="detail-grid">
+            <div class="content-section">
+                <div class="glass-card">
+                    <h2>What I Did</h2>
+                    <ul>
+                        <li>Collected and cleaned 10 years of daily OHLCV data for the NIFTY 50 index.</li>
+                        <li>Engineered technical features such as volatility (ATR), volume ratios, and candle structure
+                            metrics.</li>
+                        <li>Labeled market conditions into Trending and Ranging regimes.</li>
+                        <li>Trained a Random Forest machine learning model to identify high-probability trending days.
+                        </li>
+                        <li>Designed and backtested an ATR-based trading strategy using the model’s predictions.</li>
+                        <li>Implemented strict risk management with predefined stop-loss, take-profit, and time-based
+                            exits.</li>
+                    </ul>
+
+                    <h2>Skills Used</h2>
+                    <p
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 500; font-family: var(--font-mono);">
+                        Python • Pandas • NumPy • Matplotlib • Seaborn • Scikit-Learn • Finance-Lib</p>
+
+                    <h2>Results</h2>
+                    <ul>
+                        <li>Backtested over 1,126 trades across 10 years of data.</li>
+                        <li>Achieved positive total P&L (~₹11,000+).</li>
+                        <li>Maintained a win rate of ~40%, demonstrating positive expectancy through risk-reward
+                            management.</li>
+                        <li>Successfully avoided choppy market conditions using machine learning as a market filter.
+                        </li>
+                        <li>Proved that disciplined risk management can outperform high-accuracy prediction models.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sriram M. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
